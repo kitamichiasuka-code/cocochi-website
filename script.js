@@ -27,6 +27,10 @@ function initSwiper() {
 //　----------------------------
 // ハンバーガーメニュー
 // ----------------------------
+
+const hamb = document.querySelector(".hamb");
+const nav = document.querySelector(".pc-view");
+
 initSwiper();
 window.addEventListener("resize",initSwiper);
 
