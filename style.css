@@ -1138,12 +1138,13 @@ footer a:not(.reserve-contact-btn):hover,
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
 }
 
+/*
 .pagetop {
   position: fixed;
   right: 8px;
   bottom: 150px;
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: rgba(170, 170, 170, 0.85);
   display: grid;
@@ -1152,6 +1153,7 @@ footer a:not(.reserve-contact-btn):hover,
   z-index: 999;
   transition: opacity 0.3s ease;
 }
+*/
 
 .pagetop:hover {
   opacity: 0.8;
