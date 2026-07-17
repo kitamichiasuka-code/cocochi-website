@@ -128,15 +128,15 @@ h1 {
 }
 
 #fv {
-  padding: 10px 40px 0 0px;
+  padding: 10px 20px 0 0px;
   background-color: #e8d2c4;
   position: relative;
 }
 
 .fv-copy {
   position: absolute;
-  left: 90px;
-  top: 200px;
+  left: 20px;
+  top: 100px;
   color: white;
   letter-spacing: 0.19em;
   font-size: 1.5em;
