@@ -106,7 +106,7 @@ header {
   border-radius: 0 40px 40px 0;
   overflow: hidden;
   text-align: left;
-  height: 50vh;
+  height: 70vh;
 }
 .fv-image img {
   border-radius: 0 40px 40px 0;
@@ -128,7 +128,7 @@ h1 {
 }
 
 #fv {
-  padding: 10px 90px 0 0px;
+  padding: 10px 40px 0 0px;
   background-color: #e8d2c4;
   position: relative;
 }
@@ -1283,7 +1283,7 @@ footer a:not(.reserve-contact-btn):hover,
     padding: 10px 240px 0 0px;
   }
   .campaign-badge {
-    right: 190px;
+    right: 230px;
   }
   .pc-view a {
     background-image: linear-gradient(#877679, #877679);
@@ -1516,13 +1516,16 @@ footer a:not(.reserve-contact-btn):hover,
 
 @media screen and (min-width: 1600px) {
   #fv {
-    padding-right: 180px;
+    padding-right: 250px;
   }
   .fv-copy {
-    right: 120px;
+    right: 40px;
     font-size: 2.2rem;
   }
   .fv-copy-main {
     font-size: 3.5rem;
+  }
+   .campaign-badge {
+    right: 230px;
   }
 }
