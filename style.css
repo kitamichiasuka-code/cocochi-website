@@ -128,7 +128,7 @@ h1 {
 }
 
 #fv {
-  padding: 10px 20px 0 0px;
+  padding: 10px 30px 0 0px;
   background-color: #e8d2c4;
   position: relative;
 }
@@ -203,7 +203,7 @@ h1 {
   border-radius: 50%;
   background: #f9f7f6;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   right: 30px;
   text-align: center;
   display: flex;
@@ -1525,7 +1525,7 @@ footer a:not(.reserve-contact-btn):hover,
   .fv-copy-main {
     font-size: 3.5rem;
   }
-   .campaign-badge {
+  .campaign-badge {
     right: 230px;
   }
 }
