@@ -1153,7 +1153,7 @@ footer a:not(.reserve-contact-btn):hover,
   z-index: 999;
   transition: opacity 0.3s ease;
 }
-*/
+
 
 .pagetop:hover {
   opacity: 0.8;
@@ -1165,6 +1165,7 @@ footer a:not(.reserve-contact-btn):hover,
   color: #fff;
   stroke-width: 4;
 }
+*/
 
 /* タブレット・PC用 */
 @media screen and (min-width: 768px) {
