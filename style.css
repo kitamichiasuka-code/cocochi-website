@@ -149,7 +149,6 @@ h1 {
 .fv-copy-main {
   transform: translate(-6px, -3px);
   font-size: 2.15rem;
-
 }
 
 .fv-copy-small {
@@ -478,7 +477,7 @@ h1 {
   letter-spacing: 2px;
   line-height: 1.6;
   font-size: 1rem;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .profile-heading {
@@ -580,13 +579,12 @@ h1 {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
-.campaign-summary-content{
+.campaign-summary-content {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .campaign-summary-time {
   display: flex;
@@ -699,7 +697,7 @@ h1 {
 }
 .campaign-feature-item span {
   font-size: 1rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .campaign-feature-list .lucide {
@@ -726,7 +724,7 @@ h1 {
 
 .campaign-description {
   margin-top: 20px;
-  font-size: 0.０rem;
+  font-size: 0０rem;
   letter-spacing: 0.08rem;
   opacity: 0.8;
   padding: 18px 0;
@@ -882,13 +880,13 @@ h1 {
   padding: 0px 30px;
   justify-content: center;
   color: #2f2b2c;
-  opacity: .6;
+  opacity: 0.6;
 }
 .machine-card p {
   font-size: 1rem;
   text-align: left;
   padding: 0px 30px;
-    opacity: .6;
+  opacity: 0.6;
 }
 
 .swiper-button-prev {
@@ -1670,7 +1668,6 @@ footer a:not(.reserve-contact-btn):hover,
     height: 100%;
     background: rgba(255, 255, 255, 0.2);
   }
-
 }
 
 @media screen and (min-width: 1600px) {
