@@ -313,7 +313,7 @@ h1 {
 
 .reserve-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 0;
   z-index: 1000;
   background: #685155;
@@ -377,7 +377,8 @@ h1 {
 
 .specialty-img img {
   width: 100%;
-  aspect-ratio: 6/3;
+  aspect-ratio: 1/1;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -475,14 +476,14 @@ h1 {
   line-height: 2rem;
   max-width: 60ch;
   letter-spacing: 0.1rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .profile-heading {
   font-weight: 600;
   color: #676062;
   letter-spacing: 0.1rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: "Zen Old Mincho";
   border-left: 4px solid #98ce00;
   padding-left: 16px;
@@ -508,11 +509,12 @@ h1 {
   gap: 12px;
   flex-direction: column;
   color: #2f2b2c;
+  opacity: 0.7;
 }
 
 .cat-name {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 700;
   opacity: 0.7;
 }
 
@@ -537,64 +539,197 @@ h1 {
 #campaign {
   background-color: #685155;
   color: white;
+  position: relative;
 }
 
 #campaign .section-title {
   color: white;
 }
 
-.campaign-callout {
-  margin-top: 56px;
-  position: relative;
+.campaign-callout img {
+  width: 140px;
+  height: auto;
+  display: block;
 }
 
-.campaign-callout span {
-  position: absolute;
-  top: 13px;
-  left: 13px;
-  font-weight: 100;
-  font-size: 0.8rem;
+.campaign-callout {
+  margin-top: 68px;
+}
+.campaign-price-box {
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 .campaign-course {
   letter-spacing: 0.15em;
   font-size: 1.3rem;
 }
+.campaign-time-icon i {
+  font-size: 16px;
+}
+.campaign-course-plus {
+  letter-spacing: 0.15em;
+  font-size: 1.3rem;
+  color: #98cd02;
+}
 .campaign-read {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
+.campaign-summary-time {
+  display: flex;
+  gap: 8px;
+}
+.campaign-summary-time-read {
+  font-weight: 100;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.campaign-summary-price-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+}
+.campaign-summary-time-time {
+  font-size: 1.8rem;
+  font-weight: 100;
+  opacity: 0.8;
+  line-height: 1;
+}
+.campaign-summary-time-meta {
+  display: flex;
+  align-items: end;
+}
+.campaign-summary-time {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 8px;
+}
+.campaign-summary-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px; /* アイコン分 */
+}
+.campaign-summary-time::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  right: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.campaign-summary {
+  display: flex;
+  background: #796767;
+  border-radius: 8px;
+  gap: 0;
+}
+.campaign-time-icon {
+  display: flex;
+  align-items: center;
+}
+.campaign-summary-time-price {
+  font-size: 1.8rem;
+  font-weight: 100;
+  opacity: 0.8;
+  line-height: 1;
+  color: #98cd02;
+}
 
-.campaign-price {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  text-decoration-color: #98cd02;
-  text-decoration-line: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 6px;
+.campaign-summary-time-tax {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: end;
+}
+.campaign-summary-time-yen {
+  display: flex;
+  align-items: end;
+  color: #98cd02;
+}
+
+.campaign-time-icon .lucide {
+  width: 32px !important;
+  height: 32px !important;
+  flex-shrink: 0;
+  margin-top: 5px !important;
+  stroke-width: 1;
+}
+.campaign-summary-time-box {
+  display: flex;
+  gap: 2px;
+}
+.campaign-feature-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  position: relative;
+}
+.campaign-feature-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 20px;
+  bottom: 0;
+  height: 1px;
+  background: #e4cdc2;
+}
+.campaign-feature-item span {
+  font-size: 0.8rem;
+}
+
+.campaign-feature-list .lucide {
+  width: 24px !important;
+  height: 24px !important;
+  flex-shrink: 0;
+  margin-top: 5px !important;
+  stroke-width: 1;
+  color: #97a049;
+}
+.campaign-feature {
+  padding: 16px;
+  background: #ede2e0;
+  color: #665253;
+  border-radius: 4px;
+  margin-top: 8px;
 }
 
 .campaign-meta {
   margin-top: 20px;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
 }
 
 .campaign-description {
   margin-top: 20px;
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08rem;
+  opacity: 0.8;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.campaign-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.campaign-heading {
-  position: relative;
-}
 .reaf-item {
   position: absolute;
   top: 0;
   right: 0;
-  width: 120px;
+  width: 150px;
 }
 
 .campaign-button {
@@ -631,7 +766,9 @@ h1 {
     transform 0.2s ease,
     box-shadow 0.3s ease;
 }
-
+.campaign-feature img {
+  display: none;
+}
 .campaign-btn:hover {
   background: #89b700;
   transform: translateY(3px);
@@ -980,7 +1117,7 @@ footer ul {
 
 footer li {
   line-height: 28px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .rezerve-wrap {
@@ -1085,7 +1222,7 @@ footer li {
   gap: 16px;
   align-items: flex-start;
 }
-.footer-info-list .lucide {
+.footer-info-list cide.lu {
   width: 18px !important;
   height: 18px !important;
   flex-shrink: 0;
