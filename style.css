@@ -135,9 +135,9 @@ h1 {
 
 .fv-copy {
   position: absolute;
-  left: 8px;
+  left: 24px;
   top: 33%;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.19em;
   font-size: 1.5em;
 }
@@ -147,7 +147,7 @@ h1 {
 }
 
 .fv-copy-main {
-  transform: translate(-6px, -3px);
+  transform: translate(-6px, 3px);
   font-size: 2.15rem;
 }
 
