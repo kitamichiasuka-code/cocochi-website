@@ -128,7 +128,7 @@ h1 {
 }
 
 #fv {
-  padding: 10px 60px 0 0px;
+  padding: 10px 10px 0 0px;
   background-color: #e8d2c4;
   position: relative;
 }
@@ -148,7 +148,8 @@ h1 {
 
 .fv-copy-main {
   transform: translate(-6px, -3px);
-  font-size: 2.3rem;
+  font-size: 2.15rem;
+
 }
 
 .fv-copy-small {
@@ -473,10 +474,11 @@ h1 {
 
 .profile-block p {
   font-family: "Klee One", cursive;
-  line-height: 2rem;
   max-width: 60ch;
-  letter-spacing: 0.1rem;
-  font-size: 0.9rem;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  font-size: 1rem;
+  opacity: .8;
 }
 
 .profile-heading {
@@ -534,6 +536,7 @@ h1 {
   font-family: "Klee One", cursive;
   font-size: 1rem;
   letter-spacing: 2px;
+  line-height: 1.6;
 }
 
 #campaign {
@@ -618,7 +621,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 40px; /* アイコン分 */
+  padding-left: 30px; /* アイコン分 */
 }
 .campaign-summary-time::after {
   content: "";
@@ -1165,7 +1168,7 @@ footer li {
   display: flex;
   justify-content: center;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start;
 }
 .reserve-contact-info-text {
   text-align: center;
@@ -1222,7 +1225,7 @@ footer li {
   gap: 16px;
   align-items: flex-start;
 }
-.footer-info-list cide.lu {
+.footer-info-list .lucide {
   width: 18px !important;
   height: 18px !important;
   flex-shrink: 0;
