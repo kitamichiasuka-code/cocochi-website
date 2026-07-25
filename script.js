@@ -27,7 +27,25 @@ function initSwiper() {
 //　----------------------------
 //　スライダー
 //　----------------------------
+const conceptSwiper = new Swiper(".concept-swiper", {
 
+  loop: true,
+
+  slidesPerView: "auto",
+
+  spaceBetween: 0,
+
+  speed: 6000,
+
+  allowTouchMove: true,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+});
 
 //　----------------------------
 // ハンバーガーメニュー

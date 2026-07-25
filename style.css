@@ -283,16 +283,7 @@ h1 {
   margin: 0 auto;
 }
 
-.slider {
-  overflow: hidden;
-  width: 100%;
-}
-.slider-track {
-  display: flex;
-  width: max-content;
-  animation: scroll 30s linear infinite;
-  gap: 0px;
-}
+
 
 .slider-track img {
   width: 300px;
@@ -302,14 +293,21 @@ h1 {
   display: block;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.concept-swiper{
+  overflow: hidden;
 }
+
+.concept-swiper .swiper-slide{
+  width: 300px;
+}
+
+.concept-swiper img{
+  width: 100%;
+  aspect-ratio: 1080/709;
+  object-fit: cover;
+  display: block;
+}
+
 
 .reserve-btn {
   position: fixed;
