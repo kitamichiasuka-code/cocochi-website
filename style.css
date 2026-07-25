@@ -357,10 +357,13 @@ h1 {
 }
 
 .section-title {
+  margin-top: 8px;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.3;
   color: #2f2b2c;
+  letter-spacing: 0.2rem;
+  opacity: 0.8;
 }
 
 .specialty-item {
@@ -887,6 +890,7 @@ h1 {
   text-align: left;
   padding: 0px 30px;
   opacity: 0.6;
+  letter-spacing: 0.1rem;
 }
 
 .swiper-button-prev {
@@ -909,73 +913,135 @@ h1 {
 }
 
 #voice {
-  background: url("img/bg-texture.webp");
+  background: #f6f1ee;
   background-size: cover;
 }
-
-.voice-block {
-  margin-top: 56px;
+.voice-intro {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 16px;
+  margin-top: 56px;
 }
-.voice-card:nth-child(even) {
-  margin-left: auto;
+.voice-intro-text {
+  color: #555;
+  letter-spacing: 0.09rem;
+  font-size: 0.9em;
+  text-align: center;
+}
+.voice-note {
+  color: #555;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-size: 0.75em;
+}
+.voice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .voice-card {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 80%;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #fff;
+  justify-content: center;
+  box-shadow: 0 0 8px gray;
+  gap: 16px;
+  padding: 16px 16px;
 }
 
-.voice-number {
-  font-family: "Klee One", cursive;
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
+.voice-img {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background: #efe4dc;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.voice-img img {
+  width: 80px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  padding: 12px 0 0 0;
 }
 
 .voice-title {
-  padding: 10px 20px;
-  font-family: "Klee One", cursive;
-  background-color: white;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-}
-
-.voice-description {
-  font-family: "Klee One", cursive;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
-}
-
-.voice-accordion {
-  margin-top: 15px;
-}
-
-.voice-accordion summary {
-  cursor: pointer;
-  list-style: none;
-  color: #685155;
-  font-weight: 600;
-}
-.voice-accordion summary::-webkit-details-marker {
-  display: none;
-}
-
-.voice-accordion summary::after {
-  content: "＋";
-  margin-left: 8px;
-}
-
-.voice-accordion[open] summary::after {
-  content: "ー";
-}
-
-.voice-description {
-  margin-top: 12px;
+  text-align: left;
+  color: #42413f;
+  letter-spacing: 0.08em;
   line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.voice-user {
+  color: gray;
+  font-size: 0.88rem;
+}
+
+.voice-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+.voice-meta {
+  display: flex;
+  flex-direction: row;
+  color: #b7a46c;
+  justify-content: space-between;
+}
+.voice-number {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+.voice-footer {
+  padding-top: 16px;
+  border-top: 1px solid #d7d3c8;
+  display: flex;
+  justify-content: space-between;
+}
+.voice-link {
+  color: #7b7673;
+  padding-bottom: 4px;
+  font-size: 0.8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Zen Old Mincho", serif;
+  border-bottom: 1px solid #c6b0a3;
+  padding-bottom: 4px;
+
+  transition: color .3s ease;
+}
+
+.voice-link::after{
+  content: "→";
+  display: inline-block;
+  margin-left:4px;
+  transition: transform .3s ease;
+}
+
+.voice-link:hover{
+  color: #42413f;
+}
+.voice-link:hover::after{
+  transform: translateX(4px);
 }
 
 #access {
@@ -1166,12 +1232,12 @@ footer li {
 }
 
 .reserve-contact-info h4 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding-bottom: 8px;
 }
 
 .reserve-contact-info p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.8;
 }
 
@@ -1180,9 +1246,6 @@ footer li {
   justify-content: center;
   gap: 12px;
   align-items: center;
-}
-.reserve-contact-info-text {
-  text-align: center;
 }
 .reserve-contact-info-icon {
   width: 40px;
@@ -1325,6 +1388,83 @@ footer a:not(.reserve-contact-btn):hover,
   stroke-width: 4;
 }
 */
+
+/* =======================
+  voice Model
+======================= */
+
+.voice-modal {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1000;
+}
+
+.voice-modal.show{
+  display: flex;
+}
+.voice-modal-content {
+  position: relative;
+  width: min(90%, 600px);
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 24px;
+
+  padding: 32px 24px;
+  overflow-y: auto;
+}
+.voice-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 2rem;
+  color: #7b7673;
+
+  cursor: pointer;
+}
+
+.voice-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.voice-modal-number {
+  font-family: "Allura", cursive;
+  font-size: 2.5rem;
+  color: #b7a46c;
+  line-height: 1;
+}
+
+.voice-modal-star {
+  color: #b7a46c;
+  font-size: 0.9rem;
+}
+
+.voice-modal-text {
+  color: #42413f;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  margin-bottom: 32px;
+}
+
+.voice-modal-user {
+  text-align: right;
+  color: #7b7673;
+}
 
 /* タブレット・PC用 */
 @media screen and (min-width: 768px) {
