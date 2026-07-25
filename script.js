@@ -28,14 +28,16 @@ function initSwiper() {
 //　スライダー
 //　----------------------------
 const conceptSwiper = new Swiper(".concept-swiper", {
-
   loop: true,
-
   slidesPerView: "auto",
-
   spaceBetween: 0,
 
   speed: 6000,
+
+  freeMode: {
+    enabled: true,
+    momentum: false,
+  },
 
   allowTouchMove: true,
 
@@ -44,7 +46,6 @@ const conceptSwiper = new Swiper(".concept-swiper", {
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
-
 });
 
 //　----------------------------
